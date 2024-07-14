@@ -1,0 +1,174 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: url('/assets/img/neutral.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    padding: 50px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    animation: spin 5s linear infinite;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ccc;
+    transition: width 0.3s;
+}
+
+nav a:hover {
+    color: #ccc;
+    transform: translateY(-3px) scale(1.1);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in;
+}
+
+.contact-info {
+    background-color: rgba(33, 105, 51, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.contact-info:hover {
+    transform: scale(1.02);
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.message-form {
+    background-color: rgba(33, 105, 51, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.message-form input,
+.message-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    transition: border 0.3s;
+}
+
+.message-form input:focus,
+.message-form textarea:focus {
+    border: 2px solid #ccc;
+}
+
+.message-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #223127;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.message-form button:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(21, 32, 41, 0.8);
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: fadeIn 1s ease-in;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #ccc;
+    transform: scale(1.2) rotate(5deg);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

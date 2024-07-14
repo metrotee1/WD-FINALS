@@ -1,0 +1,133 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: url('/assets/img/neutral.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  padding: 50px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  animation: spin 5s linear infinite;
+}
+
+.profile-image {
+  border-radius: 100%;
+  max-width: 300px;
+  margin: 20px 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: bounce 2s infinite;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #ccc;
+  transform: translateY(-3px) scale(1.1);
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.74);
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.content:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 36px;
+  animation: fadeIn 1s ease-in;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+footer {
+  background-color: rgba(21, 32, 41, 0.8);
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  animation: fadeIn 3s ease-in;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s, transform 0.3s;
+  animation: fadeIn 2s ease-in;
+}
+
+.social-links a:hover {
+  color: #ccc;
+  transform: scale(1.2) rotate(15deg);
+}
