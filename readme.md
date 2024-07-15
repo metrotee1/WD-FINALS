@@ -127,6 +127,7 @@ WD-Finals
 |        └─ img
 |           └─ fileWith.jpeg/.jpg/.webp/.png
 |     └─ index.html
+|
 └─ index.html
 └─ readme.md
 ```
