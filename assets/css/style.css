@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
-  background: url('/assets/img/neutral.gif') no-repeat center center fixed;
+  background: url('../img/neutral.gif') no-repeat center center fixed;
   background-size: cover;
 }
 
