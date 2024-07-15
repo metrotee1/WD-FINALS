@@ -88,23 +88,44 @@ Learn how to use Github correctly and develop your professional project-creation
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
-└─ assets
+WD-Finals
+└─ assets📂
 |   └─ css
 |   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
-|   └─ js
-|       └─ script.js
+|       └─ fileWith.jpeg/.jpg/.webp/.png
+|
 └─ pages
-|  └─ pageName
+|  └─ About Me📂
 |     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
+|        └─ css
+|        |  └─ style.css
+|        └─ img
+|           └─ fileWith.jpeg/.jpg/.webp/.png
+|     └─ index.html
+|
+|  └─ Contacts📂
+|     └─ assets
+|        └─ css
+|        |  └─ style.css
+|        └─ img
+|           └─ fileWith.jpeg/.jpg/.webp/.png
+|     └─ index.html
+|
+|  └─ Credits📂
+|     └─ assets
+|        └─ css
+|        |  └─ style.css
+|        └─ img
+|           └─ fileWith.jpeg/.jpg/.webp/.png
+|     └─ index.html
+|
+|  └─ Projects📂
+|     └─ assets
+|        └─ css
+|        |  └─ style.css
+|        └─ img
+|           └─ fileWith.jpeg/.jpg/.webp/.png
 |     └─ index.html
 └─ index.html
 └─ readme.md
